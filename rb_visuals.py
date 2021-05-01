@@ -87,7 +87,7 @@ def rma(x, n, y0):
 
 
 
-raw_data = pd.read_csv("data/bunny-usd-max.csv")
+raw_data = pd.read_csv("data/bunny-usd-max-apr21.csv")
 #data = data.query("type == 'conventional' and region == 'Albany'")
 #raw_data["date"] = pd.to_datetime(raw_data["date"], format="%Y-%m-%d")
 
@@ -400,7 +400,7 @@ app.layout = html.Div(
 )
 
 
-# In[1]:
+# In[28]:
 
 
 sma_fig.write_html("visuals/sma.html")
@@ -410,7 +410,7 @@ sma_fig.write_html("visuals/ema_fig.html")
 
 if __name__ == "__main__":
     app.run_server(debug=True)
-# In[ ]:
+# In[29]:
 
 
 get_ipython().system('jupyter nbconvert --to script rb_visuals.ipynb')
